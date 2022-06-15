@@ -1,0 +1,68 @@
+/* TO USE THIS FOR YOUR TOUR, find and replace MMqLrAhy2oN with your tour's shortId */
+
+/* Place these styles in <style> tag */
+
+/* This sets the background image for a given embedded tour on your page. Remember to replace MMqLrAhy2oN with your tour shortId */
+.CloudPano#MMqLrAhy2oN #iframeCover {
+  background: url("https://images.unsplash.com/photo-1498887960847-2a5e46312788?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80");
+  background-size: cover;
+}
+
+/* These styles only need to be included on your page once and will work for all iFrames if you have more than one tour on your page */
+
+.CloudPano #iframeCover {
+  max-height: inherit;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  height: 500px;
+  width: 100%;
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  text-align: center;
+}
+
+.CloudPano #iframeCover.fadeOut {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
+}
+
+.CloudPano .fadeIn {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
+}
+
+.CloudPano #hidableElements {
+  width: 100%;
+  height: 100px;
+  margin: auto;
+  display: inline-block;
+}
+
+.CloudPano #hidableElements button {
+  background: url(https://www.summitcl.com/wp-content/uploads/2018/11/play-button-overlay-png-1-420x400.png);
+  border: none;
+  height: 100px;
+  width: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.CloudPano #hidableElements h1 {
+  color: white;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1;
+  margin: auto;
+  text-shadow: black 20px 20px 20px;
+}
+
+.CloudPano iframe {
+  max-height: 95vh;
+}
